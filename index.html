@@ -19,51 +19,61 @@
       box-shadow: 0 8px 16px rgba(0,0,0,.15);
     }
 
-    /* Pill‑style primary button */
+    /* Pill-style primary button */
     .btn-primary-pill {
-      @apply btn btn-primary rounded-pill px-4 py-2;
+      border-radius: 50px;
+      padding: .5rem 1.5rem;
     }
-    /* If your GitHub UI doesn't support @apply, use: */
-    /* .btn-primary-pill {
-         border-radius: 50px;
-         padding: .5rem 1.5rem;
-      } */
+
+    /* Perfect circle for the headshot */
+    .rounded-circle {
+      border-radius: 50% !important;
+    }
+
+    /* Header background: left half nebula, right half black */
+    header {
+      background-image:
+        url('images/galaxy.jpg'),
+        linear-gradient(to right, transparent 50%, black 50%);
+      background-repeat: no-repeat;
+      background-size: 50% 100%, 100% 100%;
+      background-position: left center, left top;
+    }
   </style>
 </head>
 <body class="bg-light text-dark">
 
-  <!-- Hero with background image -->
-  <header 
-    class="text-white py-5" 
-    style="background: url('images/galaxy.jpg') center/cover no-repeat;">
+  <!-- Hero with split background and image on right -->
+  <header class="text-white py-5">
     <div class="container">
       <div class="row align-items-center">
-        <!-- Column 1: photo -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
+        <!-- TEXT on left -->
+        <div class="col-md-8 text-center text-md-start order-md-1">
+          <h1 class="display-4 mb-3">Niranjana P</h1>
+          <p class="lead mb-1">MSc Physics (Astrophysics)</p>
+          <p class="mb-1">UV Upturn · Galaxy Evolution · Pre-Main Sequence Stars</p>
+          <p class="mb-0">Observational Galactic & Extragalactic Research</p>
+        </div>
+        <!-- PHOTO on right -->
+        <div class="col-md-4 text-center mb-4 mb-md-0 order-md-2">
           <img src="images/niranjana.jpeg"
                alt="Niranjana P"
                class="rounded-circle border border-white"
-               width="150">
-        </div>
-        <!-- Column 2: text -->
-        <div class="col-md-8 text-center text-md-start">
-          <h1 class="display-4 mb-3">Niranjana P</h1>
-          <p class="lead mb-1">MSc Physics (Astrophysics)</p>
-          <p class="mb-1">UV Upturn · Galaxy Evolution · Pre‑Main Sequence Stars</p>
-          <p class="mb-0">Observational Galactic & Extragalactic Research</p>
+               width="150"
+               height="150">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main two‑column section -->
+  <!-- Main two-column section -->
   <section class="container my-5">
     <div class="row gy-5">
       <!-- LEFT COLUMN -->
       <div class="col-md-4">
         <div class="mb-4">
           <h2>About Me 👨‍🎓</h2>
-          <p>I’m a final‑year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early‑type galaxies.</p>
+          <p>I’m a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
         </div>
         <div class="mb-4">
           <h3>Skills 💻</h3>
@@ -105,12 +115,11 @@
             <div class="card h-100 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">UV Upturn Analysis</h5>
-                <p class="card-text">Investigating UV flux in early‑type galaxies using archival GALEX data.</p>
+                <p class="card-text">Investigating UV flux in early-type galaxies using archival GALEX data.</p>
                 <p>See code <a href="https://github.com/your-username/uv-upturn" target="_blank">here</a>.</p>
               </div>
             </div>
           </div>
-        
           <!-- Project 2 -->
           <div class="col-sm-6 col-lg-4">
             <div class="card h-100 shadow-sm">
@@ -121,19 +130,17 @@
               </div>
             </div>
           </div>
-        
           <!-- Project 3 -->
           <div class="col-sm-6 col-lg-4">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title">T Tauri Light Curves</h5>
-                <p class="card-text">Gaussian Process modeling of ASAS‑SN light curves for T Tauri stars.</p>
+                <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
                 <p>See code <a href="https://github.com/your-username/ttauri-gp" target="_blank">here</a>.</p>
               </div>
             </div>
           </div>
         </div>
-
 
         <!-- Explore more button -->
         <div class="text-end mt-4">
