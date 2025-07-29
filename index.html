@@ -64,11 +64,12 @@
 
     .bg-galaxy {
       background: 
-        linear-gradient(to right, rgba(11, 13, 23, 0.85), rgba(11, 13, 23, 0)), 
-        url('./images/galaxy1.jpg') center/cover no-repeat;
+        linear-gradient(to left, rgba(11, 13, 23, 0.85), rgba(11, 13, 23, 0)),
+        url('./images/galaxy.jpg') center/cover no-repeat;
       min-height: 350px;
       height: 100%;
     }
+
 
     .icon-lg { width: 28px; height: 28px; }
     .text-accent { color: var(--clr-accent); }
@@ -111,15 +112,15 @@
 
   <!-- Hero Section -->
   <header>
-    <div class="row align-items-center h-100 g-0"> 
-      <!-- LEFT + CENTER (inside container) -->
-      <div class="col-md-8">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-auto" data-aos="fade-right">
+    <div class="container-fluid h-100">
+      <div class="row align-items-center h-100 g-0">
+        <!-- Profile + Text -->
+        <div class="col-md-8 ps-md-5"> <!-- add padding-start on md+ screens -->
+          <div class="d-flex align-items-center">
+            <div class="me-3" data-aos="fade-right">
               <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-img">
             </div>
-            <div class="col text-center text-md-start" data-aos="fade-up">
+            <div data-aos="fade-up">
               <h1 class="display-4 mb-2">Niranjana P</h1>
               <p class="lead mb-1">MSc Physics (Astrophysics)</p>
               <p class="mb-1">UV Upturn · Galaxy Evolution · Pre‑Main Sequence Stars</p>
@@ -127,10 +128,10 @@
             </div>
           </div>
         </div>
-      </div>
   
-      <!-- RIGHT COLUMN (galaxy, full height, flush right) -->
-      <div class="col-md-4 bg-galaxy d-none d-md-block" data-aos="fade-left"></div>
+        <!-- Galaxy Column -->
+        <div class="col-md-4 bg-galaxy d-none d-md-block" data-aos="fade-left"></div>
+      </div>
     </div>
   </header>
 
