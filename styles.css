@@ -1,0 +1,185 @@
+:root {
+  --clr-bg: #0a0e1a;
+  --clr-light: #f8f9fa;
+  --clr-dark: #2c3e50;
+  --clr-accent: #6b5b95;
+  --clr-text-light: #ecf0f1;
+  --clr-text-muted: #7f8c8d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* Minimalist Header */
+header {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a252f 100%);
+  color: var(--clr-text-light);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Subtle starfield effect */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 25% 20%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 75% 35%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1px 1px at 15% 60%, rgba(255,255,255,0.2), transparent),
+    radial-gradient(1px 1px at 85% 75%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1px 1px at 45% 85%, rgba(255,255,255,0.2), transparent);
+  background-size: 400px 400px;
+  opacity: 0.6;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Clean card design */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Simple button styling */
+.btn-primary-pill {
+  background: var(--clr-accent);
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-pill:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+/* Galaxy background */
+.bg-galaxy {
+  background:
+    linear-gradient(to right, rgba(10, 14, 26, 0.4), rgba(10, 14, 26, 0)),
+    url('./images/galaxy.jpg') center/cover no-repeat;
+  min-height: 70vh;
+  height: 100%;
+}
+
+.bg-galaxy-fallback {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 70vh;
+  height: 100%;
+}
+
+.text-accent { color: var(--clr-accent); }
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--clr-accent);
+}
+
+.underline {
+  width: 30px;
+  height: 2px;
+  background: var(--clr-accent);
+  margin: 8px auto 12px;
+}
+
+.skills-list li {
+  padding: 0.3rem 0;
+  color: var(--clr-dark);
+  transition: color 0.3s ease;
+}
+
+.skills-list li:hover {
+  color: var(--clr-accent);
+}
+
+/* Social links */
+.social-links a {
+  color: var(--clr-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.2rem 0;
+}
+
+.social-links a:hover {
+  color: var(--clr-accent);
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--clr-accent) !important;
+}
+
+@media (max-width: 768px) {
+  .display-4 { font-size: 2.2rem; }
+  .profile-img { width: 120px; height: 120px; }
+  header { min-height: 60vh; }
+}
+
+.publication-item {
+  background: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--clr-accent);
+  margin-bottom: 1rem;
+}
+
+/* Icon size override */
+.skills-list .fas.fa-circle {
+  font-size: 0.4rem;
+}
