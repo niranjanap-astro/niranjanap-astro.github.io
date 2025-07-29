@@ -63,10 +63,13 @@
     }
 
     .bg-galaxy {
-      background: url('./images/galaxy.jpg') center/cover no-repeat;
-      min-height: 350px;      /* same as header */
-      height: 100%;           /* stretch to header height */
+      background: 
+        linear-gradient(to left, rgba(11, 13, 23, 0.85), rgba(11, 13, 23, 0)), 
+        url('./images/galaxy.jpg') center/cover no-repeat;
+      min-height: 350px;
+      height: 100%;
     }
+
     .icon-lg { width: 28px; height: 28px; }
     .text-accent { color: var(--clr-accent); }
 
