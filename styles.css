@@ -34,7 +34,7 @@ header {
 }
 
 /* Subtle starfield effect */
-header::before {
+/*header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -49,7 +49,25 @@ header::before {
     radial-gradient(1px 1px at 45% 85%, rgba(255,255,255,0.2), transparent);
   background-size: 400px 400px;
   opacity: 0.6;
+}*/
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/starfield.png') repeat;
+  background-size: cover;
+  animation: star-twinkle 200s linear infinite;
+  opacity: 0.6;
 }
+
+@keyframes star-twinkle {
+  from { background-position: 0 0; }
+  to   { background-position: -10000px 5000px; }
+}
+
 
 .profile-img {
   width: 160px;
