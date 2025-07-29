@@ -117,7 +117,7 @@ header::before {
 .bg-galaxy {
   background:
     linear-gradient(to right, rgba(10, 14, 26, 0.4), rgba(10, 14, 26, 0)),
-    url('./images/galaxy.jpg') center/cover no-repeat;
+    url('./images/galaxy.jpg') center/contain no-repeat;
   min-height: 70vh;
   height: 100%;
 }
