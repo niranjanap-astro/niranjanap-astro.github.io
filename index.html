@@ -7,7 +7,14 @@
 
   <!-- 1) Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-…"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <!-- 2) Bootstrap CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
@@ -76,6 +83,9 @@
       width: 28px;
       height: 28px;
     }
+    /* icon color */
+    .text-accent { color: var(--clr-accent); }
+
 
   </style>
 
@@ -114,19 +124,40 @@
       <!-- LEFT COLUMN -->
       <div class="col-md-4">
         <div class="mb-4">
-          <h2>About Me 👨‍🎓</h2>
+          <h2>
+            <i class="fas fa-user-graduate me-2 text-accent"></i> About Me
+          </h2>
           <p>I’m a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
         </div>
         <div class="mb-4">
-          <h3>Skills 💻</h3>
+          <h3>
+            <i class="fas fa-laptop-code me-2 text-accent"></i>
+            Skills
+          </h3>
           <ul class="list-unstyled">
-            <li>Python & Astropy</li>
-            <li>Photometry & Spectroscopy</li>
-            <li>Jupyter & Git</li>
+            <li class="d-flex align-items-start mb-1">
+              <i class="fas fa-circle text-accent me-2" style="font-size:.5rem; margin-top:.6rem;"></i>
+              Python & Astropy
+            </li>
+            <li class="d-flex align-items-start mb-1">
+              <i class="fas fa-circle text-accent me-2" style="font-size:.5rem; margin-top:.6rem;"></i>
+              Photometry
+            </li>
+            <li class="d-flex align-items-start mb-1">
+              <i class="fas fa-circle text-accent me-2" style="font-size:.5rem; margin-top:.6rem;"></i>
+              Spectroscopy
+            </li>
+            <li class="d-flex align-items-start mb-1">
+              <i class="fas fa-circle text-accent me-2" style="font-size:.5rem; margin-top:.6rem;"></i>
+              Jupyter & Git
+            </li>
           </ul>
         </div>
         <div class="mb-4">
-          <h3>Connect 🔗</h3>
+          <h3>
+            <i class="fas fa-link me-2 text-accent"></i>
+            Connect
+          </h3>
           <ul class="list-unstyled">
             <li class="d-flex align-items-center mb-2">
               <img src="images/linkedin.png" class="me-2 icon-lg" alt="LinkedIn">
@@ -201,7 +232,10 @@
 
         <!-- Publications moved here -->
         <div class="mt-5">
-          <h3>Recent Publications 📚</h3>
+          <h3>
+            <i class="fas fa-book me-2 text-accent"></i>
+            Recent Publications
+          </h3>
           <ol class="ps-3">
             <li>Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong>. 
                 “Deciphering the properties of UV upturn galaxies in the Virgo cluster.”  
