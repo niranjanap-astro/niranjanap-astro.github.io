@@ -4,107 +4,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Niranjana P — Astrophysicist</title>
-  <meta name="description" content="Observational astrophysics research on UV-upturn galaxies & T Tauri stars">
-  
+  <meta name="description" content="Niranjana P — MSc Physics (Astrophysics) specializing in UV upturn, galaxy evolution, and pre-main sequence stars research">
+
+  <!-- SEO / Social Sharing -->
+  <meta property="og:title" content="Niranjana P — MSc Astrophysics">
+  <meta property="og:description" content="Observational astrophysics research on UV upturn galaxies & T Tauri stars">
+  <meta property="og:image" content="https://YOUR_USERNAME.github.io/images/og-image.jpg">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
-  
-  <!-- Styles -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a class="logo" href="#">Niranjana P</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Niranjana P</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Hi, I’m Niranjana P.</h1>
-      <p class="tagline">I study UV‑upturn galaxies & pre‑main‑sequence stellar evolution.</p>
-      <div class="hero-buttons">
-        <a href="pdfs/NiranjanaP_CV.pdf" class="btn">Download CV</a>
-        <a href="mailto:your.email@example.com" class="btn btn-primary">Get in Touch</a>
+  <header>
+    <div class="container-fluid h-100">
+      <div class="row align-items-center h-100 g-0">
+        <div class="col-md-7 ps-md-5">
+          <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+            <div class="me-md-4 mb-3 mb-md-0" data-aos="fade-right">
+              <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-img">
+            </div>
+            <div data-aos="fade-up">
+              <h1 class="display-4 mb-3">Niranjana P</h1>
+              <p class="lead mb-2">MSc Physics (Astrophysics)</p>
+              <p class="mb-2">UV Upturn · Galaxy Evolution · Pre‑Main Sequence Stars</p>
+              <p class="mb-4">Observational Galactic & Extragalactic Research</p>
+              <a href="#contact" class="btn btn-primary-pill me-3">Get in Touch</a>
+              <a href="pdfs/NiranjanaP_CV.pdf" class="btn btn-outline-light" target="_blank">Download CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 bg-galaxy d-none d-md-block" data-aos="fade-left" role="img" aria-label="Galaxy background"></div>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/niranjana.jpeg" alt="Niranjana P">
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="container">
+  <main class="container my-5">
+    <div class="row gx-5 gy-4">
+      <aside class="col-lg-4" data-aos="fade-right" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="mb-4">I’m a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
-    </section>
+        <h3 class="h5 section-title">Skills</h3>
+        <ul class="list-unstyled skills-list">
+          <li><i class="fas fa-circle text-accent me-2"></i>Python &amp; Astropy</li>
+          <li><i class="fas fa-circle text-accent me-2"></i>Photometry</li>
+          <li><i class="fas fa-circle text-accent me-2"></i>Spectroscopy</li>
+          <li><i class="fas fa-circle text-accent me-2"></i>Data Analysis</li>
+          <li><i class="fas fa-circle text-accent me-2"></i>Jupyter &amp; Git</li>
+        </ul>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card-grid">
-        <!-- UV Upturn Analysis -->
-        <div class="card">
-          <h3>UV Upturn Analysis</h3>
-          <p>Investigating UV flux in early-type galaxies using GALEX data.</p>
-          <a href="https://github.com/your-username/uv-upturn" class="card-link"><i class="fab fa-github"></i> View on GitHub</a>
+        <h3 class="h5 section-title">Connect</h3>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin text-accent me-2"></i>LinkedIn</a>
+          <a href="https://scholar.google.com/..." target="_blank"><i class="fas fa-graduation-cap text-accent me-2"></i>Google Scholar</a>
+          <a href="https://orcid.org/..." target="_blank"><i class="fab fa-orcid text-accent me-2"></i>ORCID</a>
+          <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github text-accent me-2"></i>GitHub</a>
+          <a href="pdfs/NiranjanaP_CV.pdf" target="_blank"><i class="fas fa-file-pdf text-accent me-2"></i>Download CV</a>
         </div>
-        <!-- LMC Herbig Stars -->
-        <div class="card">
-          <h3>LMC Herbig Stars</h3>
-          <p>Characterizing Herbig–Haro objects in the Large Magellanic Cloud.</p>
-          <a href="https://github.com/your-username/lmc-herbig" class="card-link"><i class="fab fa-github"></i> View on GitHub</a>
-        </div>
-        <!-- T Tauri Light Curves -->
-        <div class="card">
-          <h3>T Tauri Light Curves</h3>
-          <p>Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
-          <a href="https://github.com/your-username/ttauri-gp" class="card-link"><i class="fab fa-github"></i> View on GitHub</a>
-        </div>
-      </div>
-    </section>
+      </aside>
 
-    <!-- Publications Section -->
-    <section id="publications">
-      <h2>Recent Publications</h2>
-      <div class="card-grid">
-        <div class="card">
-          <p><strong>Akhil, K. R., S. S. Kartha, N. Kizhuprakkat, K. Ujjwal,</strong> & Niranjana P. (2024). "Deciphering the properties of UV upturn galaxies in the Virgo cluster." <em>MNRAS</em>.</p>
+      <article class="col-lg-8" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="row g-4 mb-5">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">UV Upturn Analysis</h5>
+                <div class="underline"></div>
+                <p class="card-text">Investigating UV flux in early-type galaxies using GALEX data.</p>
+                <a href="https://github.com/your-username/uv-upturn" class="btn btn-sm btn-primary-pill" target="_blank">
+                  <i class="fab fa-github me-1"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">LMC Herbig Stars</h5>
+                <div class="underline"></div>
+                <p class="card-text">Characterizing Herbig–Haro objects in the Large Magellanic Cloud.</p>
+                <a href="https://github.com/your-username/lmc-herbig" class="btn btn-sm btn-primary-pill" target="_blank">
+                  <i class="fab fa-github me-1"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">T Tauri Light Curves</h5>
+                <div class="underline"></div>
+                <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
+                <a href="https://github.com/your-username/ttauri-gp" class="btn btn-sm btn-primary-pill" target="_blank">
+                  <i class="fab fa-github me-1"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+        <div id="publications" data-aos="fade-up">
+          <h3 class="section-title">Recent Publications</h3>
+          <div class="publication-item">
+            <p class="mb-1">
+              Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong> (2024). 
+              "Deciphering the properties of UV upturn galaxies in the Virgo cluster." 
+              <em>Monthly Notices of the Royal Astronomical Society</em>.
+            </p>
+            <small class="text-muted">2024 • MNRAS</small>
+          </div>
+        </div>
+      </article>
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <div class="container footer-container">
-      <h2>Get in Touch</h2>
-      <div class="social-links">
-        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://orcid.org/..." target="_blank"><i class="fab fa-orcid"></i></a>
-      </div>
-      <p>&copy; 2024 Niranjana P</p>
+  <footer class="bg-dark text-white text-center py-4" id="contact">
+    <div class="container">
+      <h4 class="mb-3">Get in Touch</h4>
+      <p class="mb-3">
+        <a href="mailto:your.email@example.com" class="link-light me-3">
+          <i class="fas fa-envelope me-1"></i>your.email@example.com
+        </a>
+        <a href="https://github.com/your-username" class="link-light">
+          <i class="fab fa-github me-1"></i>GitHub
+        </a>
+      </p>
+      <p class="text-muted mb-0">&copy; 2024 Niranjana P</p>
     </div>
   </footer>
-  
+
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
