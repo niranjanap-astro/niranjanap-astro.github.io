@@ -37,10 +37,10 @@
     header {
       background: linear-gradient(135deg, var(--clr-bg) 0%, #1a1c2c 100%);
       color: var(--clr-light);
-      padding: 60px 0;
-      min-height: 250px;  /* ensures galaxy column shows */
+      min-height: 300px;     /* ensures header always tall enough */
+      display: flex;
+      align-items: stretch;  /* children fill height */
     }
-
     .profile-img {
       width: 150px; height: 150px;
       object-fit: cover;
@@ -64,11 +64,10 @@
 
     .bg-galaxy {
       background: 
-        linear-gradient(to left, rgba(11,13,23,0.7), rgba(11,13,23,0)), 
+        linear-gradient(to left, rgba(11,13,23,0.8), rgba(11,13,23,0)), 
         url('images/galaxy.jpg') center/cover no-repeat;
-      min-height: 100%;  /* fill available height */
+      flex: 1;               /* expand fully */
     }
-
     .icon-lg { width: 28px; height: 28px; }
     .text-accent { color: var(--clr-accent); }
 
@@ -110,8 +109,8 @@
 
   <!-- Hero Section -->
   <header>
-    <div class="container">
-      <div class="row align-items-stretch">
+    <div class="container h-100">
+      <div class="row align-items-stretch h-100">
         <div class="col-auto" data-aos="fade-right">
           <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-img">
         </div>
