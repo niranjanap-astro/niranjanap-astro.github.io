@@ -26,7 +26,8 @@
 
     /* Navigation */
     .navbar {
-      background: #ffffff !important;
+      background: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid #e5e7eb;
       padding: 1rem 0;
     }
@@ -48,22 +49,28 @@
       color: #1a1a1a !important;
     }
 
-    /* Hero Section */
+    /* Hero Section - Full Width */
     .hero {
-      padding: 6rem 0 4rem;
+      padding: 8rem 0 6rem;
       background: #fafafa;
+      margin-top: 70px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .profile-image {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1.5rem;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       font-weight: 600;
       color: #1a1a1a;
       margin-bottom: 0.5rem;
@@ -71,18 +78,20 @@
 
     .hero-subtitle {
       color: #6b7280;
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
     }
 
-    .hero-tags {
-      color: #9ca3af;
-      font-size: 0.95rem;
-      margin-bottom: 2rem;
+    .hero-description {
+      color: #6b7280;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 1.5rem auto 2rem;
+      line-height: 1.6;
     }
 
     .btn-simple {
-      padding: 0.6rem 1.5rem;
+      padding: 0.65rem 1.75rem;
       border-radius: 6px;
       font-size: 0.95rem;
       font-weight: 500;
@@ -114,49 +123,113 @@
       color: #1a1a1a;
     }
 
-    /* Sections */
-    .section {
-      padding: 4rem 0;
+    /* Main Content Container */
+    .main-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 1rem;
+    }
+
+    /* Section Styling */
+    .content-section {
+      margin-bottom: 6rem;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+      text-align: center;
     }
 
     .section-title {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: 600;
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
       color: #1a1a1a;
     }
 
-    /* Cards */
+    .section-subtitle {
+      color: #6b7280;
+      font-size: 1rem;
+    }
+
+    /* Project Grid - 3 columns */
     .project-card {
       background: #fafafa;
       border-radius: 8px;
-      padding: 1.75rem;
+      padding: 2rem;
       height: 100%;
       transition: all 0.2s;
       border: 1px solid transparent;
+      text-align: center;
     }
 
     .project-card:hover {
       border-color: #e5e7eb;
       background: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .project-number {
+      color: #d1d5db;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
     }
 
     .card-title {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
       color: #1a1a1a;
     }
 
     .card-text {
       color: #6b7280;
       font-size: 0.95rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
     }
 
-    /* Skills */
+    /* Publication Card */
+    .publication-card {
+      background: #fafafa;
+      padding: 2.5rem;
+      border-radius: 8px;
+      border-left: 3px solid #1a1a1a;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .publication-card p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+      color: #4b5563;
+    }
+
+    .publication-card .text-muted {
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    /* Skills & Connect - Side by Side */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .info-column h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+    }
+
     .skill-item {
-      padding: 0.5rem 0;
+      padding: 0.6rem 0;
       color: #4b5563;
       font-size: 0.95rem;
     }
@@ -168,7 +241,6 @@
       font-size: 0.5rem;
     }
 
-    /* Social Links */
     .social-link {
       display: block;
       padding: 0.75rem 0;
@@ -188,53 +260,40 @@
       color: #9ca3af;
     }
 
-    /* Publication */
-    .publication-card {
-      background: #fafafa;
-      padding: 1.75rem;
-      border-radius: 8px;
-      border-left: 3px solid #1a1a1a;
-    }
-
-    .publication-card p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 0.5rem;
-    }
-
-    .publication-card .text-muted {
-      font-size: 0.85rem;
-      color: #9ca3af;
-    }
-
     /* Footer */
     footer {
       background: #fafafa;
-      padding: 3rem 0;
+      padding: 4rem 0 3rem;
       border-top: 1px solid #e5e7eb;
     }
 
     footer h3 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: 600;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
     }
 
     footer a {
       color: #4b5563;
       text-decoration: none;
       transition: color 0.2s;
+      font-size: 1rem;
     }
 
     footer a:hover {
       color: #1a1a1a;
     }
 
-    /* About section */
-    .about-text {
-      color: #4b5563;
-      font-size: 0.95rem;
-      line-height: 1.7;
+    footer a i {
+      margin-right: 0.5rem;
     }
 
     /* Responsive */
@@ -243,19 +302,28 @@
         font-size: 2rem;
       }
       
-      .section {
-        padding: 3rem 0;
+      .main-content {
+        padding: 3rem 1rem;
+      }
+
+      .content-section {
+        margin-bottom: 4rem;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .contact-links {
+        flex-direction: column;
+        gap: 1rem;
       }
     }
 
     /* Smooth scroll */
     html {
       scroll-behavior: smooth;
-    }
-
-    /* Remove default Bootstrap link colors */
-    a.btn-simple {
-      text-decoration: none;
     }
   </style>
 </head>
@@ -270,38 +338,110 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" style="margin-top: 70px;">
-    <div class="container text-center">
-      <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-image">
-      <h1>Niranjana P</h1>
-      <p class="hero-subtitle">MSc Physics (Astrophysics)</p>
-      <p class="hero-tags">UV Upturn · Galaxy Evolution · Pre-Main Sequence Stars</p>
-      <p class="hero-tags mb-4">Observational Galactic & Extragalactic Research</p>
-      <a href="#contact" class="btn-simple btn-primary-simple me-2 mb-2">Get in Touch</a>
-      <a href="pdfs/NiranjanaP_CV.pdf" class="btn-simple btn-outline-simple mb-2" target="_blank">Download CV</a>
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <div class="hero-content">
+        <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-image">
+        <h1>Niranjana P</h1>
+        <p class="hero-subtitle">MSc Physics (Astrophysics)</p>
+        <p class="hero-description">
+          Specializing in observational astrophysics with focus on UV upturn in early-type galaxies, 
+          galaxy evolution, and classical T Tauri stars
+        </p>
+        <a href="#contact" class="btn-simple btn-primary-simple me-2 mb-2">Get in Touch</a>
+        <a href="pdfs/NiranjanaP_CV.pdf" class="btn-simple btn-outline-simple mb-2" target="_blank">Download CV</a>
+      </div>
     </div>
   </section>
 
   <!-- Main Content -->
-  <div class="container">
-    <div class="row gx-5">
-      <!-- Sidebar -->
-      <aside class="col-lg-4">
-        <section id="about" class="section">
-          <h2 class="section-title">About</h2>
-          <p class="about-text">I'm a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
+  <main class="main-content">
 
-          <h3 class="section-title mt-5">Skills</h3>
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <div class="section-header">
+        <h2 class="section-title">Research Projects</h2>
+        <p class="section-subtitle">Observational galactic & extragalactic research</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-number">01</div>
+            <h3 class="card-title">UV Upturn Analysis</h3>
+            <p class="card-text">Investigating UV flux in early-type galaxies using GALEX data and spectroscopic analysis</p>
+            <a href="https://github.com/your-username/uv-upturn" class="btn-simple btn-outline-simple btn-sm" target="_blank">
+              <i class="fab fa-github me-1"></i>View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <h3 class="card-title">LMC Herbig Stars</h3>
+            <p class="card-text">Characterizing Herbig-Haro objects in the Large Magellanic Cloud using multiwavelength observations</p>
+            <a href="https://github.com/your-username/lmc-herbig" class="btn-simple btn-outline-simple btn-sm" target="_blank">
+              <i class="fab fa-github me-1"></i>View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <h3 class="card-title">T Tauri Light Curves</h3>
+            <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for classical T Tauri stars</p>
+            <a href="https://github.com/your-username/ttauri-gp" class="btn-simple btn-outline-simple btn-sm" target="_blank">
+              <i class="fab fa-github me-1"></i>View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="content-section">
+      <div class="section-header">
+        <h2 class="section-title">Publications</h2>
+      </div>
+      
+      <div class="publication-card">
+        <p>
+          Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong> (2024). 
+          "Deciphering the properties of UV upturn galaxies in the Virgo cluster."
+        </p>
+        <p class="text-muted">
+          <em>Monthly Notices of the Royal Astronomical Society</em> · 2024
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <h2 class="section-title">About & Skills</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-column">
+          <h3>Background</h3>
+          <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.7;">
+            I'm a final-year MSc Physics student specializing in observational astrophysics. 
+            My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.
+          </p>
+
+          <h3 class="mt-4">Technical Skills</h3>
           <div class="skill-item">
             <i class="fas fa-circle"></i>Python & Astropy
           </div>
@@ -317,8 +457,10 @@
           <div class="skill-item">
             <i class="fas fa-circle"></i>Jupyter & Git
           </div>
+        </div>
 
-          <h3 class="section-title mt-5">Connect</h3>
+        <div class="info-column">
+          <h3>Connect</h3>
           <a href="https://linkedin.com/in/your-linkedin" class="social-link" target="_blank">
             <i class="fab fa-linkedin"></i>LinkedIn
           </a>
@@ -334,77 +476,28 @@
           <a href="pdfs/NiranjanaP_CV.pdf" class="social-link" target="_blank">
             <i class="fas fa-file-pdf"></i>Download CV
           </a>
-        </section>
-      </aside>
+        </div>
+      </div>
+    </section>
 
-      <!-- Main Content -->
-      <main class="col-lg-8">
-        <section id="projects" class="section">
-          <h2 class="section-title">Projects</h2>
-          
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="project-card">
-                <h3 class="card-title">UV Upturn Analysis</h3>
-                <p class="card-text">Investigating UV flux in early-type galaxies using GALEX data.</p>
-                <a href="https://github.com/your-username/uv-upturn" class="btn-simple btn-outline-simple" target="_blank">
-                  <i class="fab fa-github me-1"></i>View Project
-                </a>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="project-card">
-                <h3 class="card-title">LMC Herbig Stars</h3>
-                <p class="card-text">Characterizing Herbig-Haro objects in the Large Magellanic Cloud.</p>
-                <a href="https://github.com/your-username/lmc-herbig" class="btn-simple btn-outline-simple" target="_blank">
-                  <i class="fab fa-github me-1"></i>View Project
-                </a>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="project-card">
-                <h3 class="card-title">T Tauri Light Curves</h3>
-                <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
-                <a href="https://github.com/your-username/ttauri-gp" class="btn-simple btn-outline-simple" target="_blank">
-                  <i class="fab fa-github me-1"></i>View Project
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="publications" class="section">
-          <h2 class="section-title">Publications</h2>
-          
-          <div class="publication-card">
-            <p>
-              Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong> (2024). 
-              "Deciphering the properties of UV upturn galaxies in the Virgo cluster."
-            </p>
-            <p class="text-muted">
-              <em>Monthly Notices of the Royal Astronomical Society</em> · 2024
-            </p>
-          </div>
-        </section>
-      </main>
-    </div>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer id="contact">
     <div class="container text-center">
-      <h3>Get in Touch</h3>
-      <p class="mb-3">
-        <a href="mailto:your.email@example.com" class="me-4">
-          <i class="fas fa-envelope me-2"></i>your.email@example.com
+      <h3>Let's Connect</h3>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">
+          <i class="fas fa-envelope"></i>your.email@example.com
         </a>
-        <a href="https://github.com/your-username">
-          <i class="fab fa-github me-2"></i>GitHub
+        <a href="https://github.com/your-username" target="_blank">
+          <i class="fab fa-github"></i>GitHub
         </a>
-      </p>
-      <p style="color: #9ca3af; font-size: 0.9rem;">&copy; 2024 Niranjana P</p>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank">
+          <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
+      </div>
+      <p style="color: #9ca3af; font-size: 0.9rem; margin-top: 2rem;">&copy; 2024 Niranjana P</p>
     </div>
   </footer>
 
