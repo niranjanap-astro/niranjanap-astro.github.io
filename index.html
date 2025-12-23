@@ -3,36 +3,353 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Niranjana P — Astrophysicist</title>
-  <meta name="description" content="Niranjana P — MSc Physics (Astrophysics) specializing in UV upturn, galaxy evolution, and pre-main sequence stars research">
-
-  <!-- SEO / Social Sharing -->
-  <meta property="og:title" content="Niranjana P — MSc Astrophysics">
-  <meta property="og:description" content="Observational astrophysics research on UV upturn galaxies & T Tauri stars">
-  <meta property="og:image" content="https://YOUR_USERNAME.github.io/images/og-image.jpg">
-  <meta property="og:url" content="https://YOUR_USERNAME.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
-  <!-- Bootstrap CSS -->
+  <title>Niranjana P – Astrophysicist</title>
+  <meta name="description" content="Niranjana P – MSc Physics (Astrophysics) specializing in UV upturn, galaxy evolution, and pre-main sequence stars research">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #8b5cf6;
+      --accent: #06b6d4;
+      --dark: #0f172a;
+      --dark-soft: #1e293b;
+      --light: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      background: var(--light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Navigation */
+    .navbar {
+      background: rgba(15, 23, 42, 0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link {
+      color: #e2e8f0 !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--accent) !important;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid rgba(99, 102, 241, 0.3);
+      box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      color: #94a3b8;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-tags {
+      color: #64748b;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary-custom {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-primary-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    }
+
+    .btn-outline-custom {
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-custom:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+      color: white;
+    }
+
+    /* Sections */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 2px;
+    }
+
+    /* Cards */
+    .project-card, .skill-card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      height: 100%;
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+      border-color: var(--primary);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .card-text {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Skills */
+    .skill-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .skill-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    }
+
+    .skill-item i {
+      color: var(--primary);
+      margin-right: 0.75rem;
+    }
+
+    /* Social Links */
+    .social-links a {
+      display: block;
+      padding: 1rem;
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+    }
+
+    .social-links a:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    }
+
+    .social-links a i {
+      width: 25px;
+      margin-right: 0.75rem;
+    }
+
+    /* Publication */
+    .publication-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .publication-card:hover {
+      box-shadow: 0 8px 20px rgba(6, 182, 212, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 3rem 0;
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .profile-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Niranjana P</a>
+      <a class="navbar-brand" href="#">NP</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,127 +365,149 @@
   </nav>
 
   <!-- Hero -->
-  <header>
-    <div class="container-fluid h-100">
-      <div class="row align-items-center h-100 g-0">
-        <div class="col-md-7 ps-md-5">
-          <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
-            <div class="me-md-4 mb-3 mb-md-0" data-aos="fade-right">
-              <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-img">
-            </div>
-            <div data-aos="fade-up">
-              <h1 class="display-4 mb-3">Niranjana P</h1>
-              <p class="lead mb-2">MSc Physics (Astrophysics)</p>
-              <p class="mb-2">UV Upturn · Galaxy Evolution · Pre‑Main Sequence Stars</p>
-              <p class="mb-4">Observational Galactic & Extragalactic Research</p>
-              <a href="#contact" class="btn btn-primary-pill me-3">Get in Touch</a>
-              <a href="pdfs/NiranjanaP_CV.pdf" class="btn btn-outline-light" target="_blank">Download CV</a>
-            </div>
-          </div>
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content text-center text-lg-start">
+          <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-image mb-4">
+          <h1>Niranjana P</h1>
+          <p class="hero-subtitle">MSc Physics (Astrophysics)</p>
+          <p class="hero-tags">UV Upturn · Galaxy Evolution · Pre-Main Sequence Stars</p>
+          <p class="hero-tags mb-4">Observational Galactic & Extragalactic Research</p>
+          <a href="#contact" class="btn btn-primary-custom me-3 mb-2">Get in Touch</a>
+          <a href="pdfs/NiranjanaP_CV.pdf" class="btn btn-outline-custom mb-2" target="_blank">Download CV</a>
         </div>
-        <div class="col-md-5 bg-galaxy d-none d-md-block" data-aos="fade-left" role="img" aria-label="Galaxy background"></div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container my-5">
-    <div class="row gx-5 gy-4">
-      <aside class="col-lg-4" data-aos="fade-right" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p class="mb-4">I’m a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row gx-5">
+      <!-- Sidebar -->
+      <aside class="col-lg-4">
+        <section id="about" class="section">
+          <h2 class="section-title">About Me</h2>
+          <p class="mt-4 text-secondary">I'm a final-year MSc Physics student specializing in observational astrophysics. My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.</p>
 
-        <h3 class="h5 section-title">Skills</h3>
-        <ul class="list-unstyled skills-list">
-          <li><i class="fas fa-circle text-accent me-2"></i>Python &amp; Astropy</li>
-          <li><i class="fas fa-circle text-accent me-2"></i>Photometry</li>
-          <li><i class="fas fa-circle text-accent me-2"></i>Spectroscopy</li>
-          <li><i class="fas fa-circle text-accent me-2"></i>Data Analysis</li>
-          <li><i class="fas fa-circle text-accent me-2"></i>Jupyter &amp; Git</li>
-        </ul>
+          <h3 class="h4 mt-5 mb-3">Skills</h3>
+          <div class="skill-item">
+            <i class="fas fa-code"></i>Python & Astropy
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-camera"></i>Photometry
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-wave-square"></i>Spectroscopy
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-chart-line"></i>Data Analysis
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-laptop-code"></i>Jupyter & Git
+          </div>
 
-        <h3 class="h5 section-title">Connect</h3>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin text-accent me-2"></i>LinkedIn</a>
-          <a href="https://scholar.google.com/..." target="_blank"><i class="fas fa-graduation-cap text-accent me-2"></i>Google Scholar</a>
-          <a href="https://orcid.org/..." target="_blank"><i class="fab fa-orcid text-accent me-2"></i>ORCID</a>
-          <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github text-accent me-2"></i>GitHub</a>
-          <a href="pdfs/NiranjanaP_CV.pdf" target="_blank"><i class="fas fa-file-pdf text-accent me-2"></i>Download CV</a>
-        </div>
+          <h3 class="h4 mt-5 mb-3">Connect</h3>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>LinkedIn
+            </a>
+            <a href="https://scholar.google.com/..." target="_blank">
+              <i class="fas fa-graduation-cap"></i>Google Scholar
+            </a>
+            <a href="https://orcid.org/..." target="_blank">
+              <i class="fab fa-orcid"></i>ORCID
+            </a>
+            <a href="https://github.com/your-username" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+            <a href="pdfs/NiranjanaP_CV.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i>Download CV
+            </a>
+          </div>
+        </section>
       </aside>
 
-      <article class="col-lg-8" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="row g-4 mb-5">
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title">UV Upturn Analysis</h5>
-                <div class="underline"></div>
+      <!-- Main Content -->
+      <main class="col-lg-8">
+        <section id="projects" class="section">
+          <h2 class="section-title">Projects</h2>
+          
+          <div class="row g-4 mt-4">
+            <div class="col-md-6">
+              <div class="project-card">
+                <div class="card-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3 class="card-title">UV Upturn Analysis</h3>
                 <p class="card-text">Investigating UV flux in early-type galaxies using GALEX data.</p>
-                <a href="https://github.com/your-username/uv-upturn" class="btn btn-sm btn-primary-pill" target="_blank">
-                  <i class="fab fa-github me-1"></i>View on GitHub
+                <a href="https://github.com/your-username/uv-upturn" class="btn btn-primary-custom" target="_blank">
+                  <i class="fab fa-github me-2"></i>View Project
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title">LMC Herbig Stars</h5>
-                <div class="underline"></div>
-                <p class="card-text">Characterizing Herbig–Haro objects in the Large Magellanic Cloud.</p>
-                <a href="https://github.com/your-username/lmc-herbig" class="btn btn-sm btn-primary-pill" target="_blank">
-                  <i class="fab fa-github me-1"></i>View on GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title">T Tauri Light Curves</h5>
-                <div class="underline"></div>
-                <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
-                <a href="https://github.com/your-username/ttauri-gp" class="btn btn-sm btn-primary-pill" target="_blank">
-                  <i class="fab fa-github me-1"></i>View on GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="publications" data-aos="fade-up">
-          <h3 class="section-title">Recent Publications</h3>
-          <div class="publication-item">
-            <p class="mb-1">
-              Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong> (2024). 
-              "Deciphering the properties of UV upturn galaxies in the Virgo cluster." 
-              <em>Monthly Notices of the Royal Astronomical Society</em>.
-            </p>
-            <small class="text-muted">2024 • MNRAS</small>
-          </div>
-        </div>
-      </article>
-    </div>
-  </main>
 
-  <footer class="bg-dark text-white text-center py-4" id="contact">
-    <div class="container">
-      <h4 class="mb-3">Get in Touch</h4>
-      <p class="mb-3">
-        <a href="mailto:your.email@example.com" class="link-light me-3">
-          <i class="fas fa-envelope me-1"></i>your.email@example.com
+            <div class="col-md-6">
+              <div class="project-card">
+                <div class="card-icon">
+                  <i class="fas fa-meteor"></i>
+                </div>
+                <h3 class="card-title">LMC Herbig Stars</h3>
+                <p class="card-text">Characterizing Herbig-Haro objects in the Large Magellanic Cloud.</p>
+                <a href="https://github.com/your-username/lmc-herbig" class="btn btn-primary-custom" target="_blank">
+                  <i class="fab fa-github me-2"></i>View Project
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card">
+                <div class="card-icon">
+                  <i class="fas fa-chart-area"></i>
+                </div>
+                <h3 class="card-title">T Tauri Light Curves</h3>
+                <p class="card-text">Gaussian Process modeling of ASAS-SN light curves for T Tauri stars.</p>
+                <a href="https://github.com/your-username/ttauri-gp" class="btn btn-primary-custom" target="_blank">
+                  <i class="fab fa-github me-2"></i>View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="publications" class="section">
+          <h2 class="section-title">Recent Publications</h2>
+          
+          <div class="publication-card mt-4">
+            <p class="mb-2">
+              Akhil, Krishna R., Sreeja S. Kartha, Namitha Kizhuprakkat, K. Ujjwal, and <strong>Niranjana P.</strong> (2024). 
+              "Deciphering the properties of UV upturn galaxies in the Virgo cluster."
+            </p>
+            <p class="text-muted mb-0">
+              <em>Monthly Notices of the Royal Astronomical Society</em> • 2024
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container text-center">
+      <h3 class="mb-4">Get in Touch</h3>
+      <p class="mb-4">
+        <a href="mailto:your.email@example.com" class="me-4">
+          <i class="fas fa-envelope me-2"></i>your.email@example.com
         </a>
-        <a href="https://github.com/your-username" class="link-light">
-          <i class="fab fa-github me-1"></i>GitHub
+        <a href="https://github.com/your-username">
+          <i class="fab fa-github me-2"></i>GitHub
         </a>
       </p>
-      <p class="text-muted mb-0">&copy; 2024 Niranjana P</p>
+      <p class="text-secondary">&copy; 2024 Niranjana P</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="scripts/main.js"></script>
 </body>
 </html>
