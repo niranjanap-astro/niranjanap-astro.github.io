@@ -214,3 +214,199 @@ header::before {
 .skills-list .fas.fa-circle {
   font-size: 0.4rem;
 }
+
+/* Project and Resources Pages Styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 35px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Page */
+.project-header {
+  padding: 8rem 0 4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 70px;
+}
+
+.dev-notice {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+}
+
+.dev-notice i {
+  color: #ffc107;
+  margin-right: 0.75rem;
+}
+
+.dev-notice p {
+  margin: 0;
+  color: #856404;
+  font-weight: 500;
+}
+
+.content-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.content-section:last-child {
+  border-bottom: none;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.content-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.github-link-card {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-left: 4px solid #1a1a1a;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.github-link-card:hover {
+  background: #ffffff;
+  transform: translateX(10px);
+  box-shadow: -5px 5px 20px rgba(0,0,0,0.08);
+}
+
+.github-link-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.github-link-card a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s;
+}
+
+.github-link-card a:hover {
+  gap: 1rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+  gap: 0.75rem;
+}
+
+/* Resources Page */
+.resources-header {
+  padding: 8rem 0 4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.resources-section {
+  padding: 4rem 0;
+}
+
+.section-title-resource {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section-title-resource::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #1a1a1a;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+}
+
+.resource-list strong {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.resource-list a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.resource-list a:hover {
+  color: #4b5563;
+}
+
+.resource-list a i {
+  font-size: 0.85rem;
+}
