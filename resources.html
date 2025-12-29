@@ -28,13 +28,13 @@
     .logo-img:hover {
       transform: scale(1.05);
     }
-    
+
     .resources-header {
       padding: 8rem 0 4rem;
       background: #fafafa;
       border-bottom: 1px solid #e5e7eb;
       text-align: center;
-      margin-top: 70px; /* ADD THIS LINE */
+      margin-top: 70px;
     }
 
     .resources-section {
@@ -61,46 +61,46 @@
       background: #1a1a1a;
     }
 
-    .resource-card {
-      background: #fafafa;
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #1a1a1a;
-      transition: all 0.3s;
+    .resource-list {
+      list-style: none;
+      padding: 0;
     }
 
-    .resource-card:hover {
-      background: #ffffff;
-      transform: translateX(10px);
-      box-shadow: -5px 5px 20px rgba(0,0,0,0.08);
+    .resource-list li {
+      padding: 1rem 0;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #4b5563;
     }
 
-    .resource-card h4 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
+    .resource-list li:last-child {
+      border-bottom: none;
+    }
+
+    .resource-list strong {
       color: #1a1a1a;
+      font-weight: 600;
+      font-size: 1.05rem;
     }
 
-    .resource-card p {
-      color: #6b7280;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-
-    .resource-card a {
+    .resource-list a {
       color: #1a1a1a;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
+      margin-left: 0.5rem;
+      transition: all 0.3s;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      transition: gap 0.3s;
+      gap: 0.3rem;
     }
 
-    .resource-card a:hover {
-      gap: 0.75rem;
+    .resource-list a:hover {
+      color: #4b5563;
+    }
+
+    .resource-list a i {
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -142,116 +142,92 @@
     <section class="resources-section">
       <h2 class="section-title-resource">Data Sites & Archives</h2>
       
-      <div class="resource-card">
-        <h4><i class="fas fa-database me-2"></i>GALEX Archive</h4>
-        <p>Galaxy Evolution Explorer mission data archive containing UV imaging and spectroscopic data for millions of sources.</p>
-        <a href="https://galex.stsci.edu/" target="_blank">
-          Visit Archive <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-database me-2"></i>MAST Archive</h4>
-        <p>Mikulski Archive for Space Telescopes - Access data from Hubble, JWST, GALEX, and other space missions.</p>
-        <a href="https://mast.stsci.edu/" target="_blank">
-          Visit Archive <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-database me-2"></i>ASAS-SN Sky Patrol</h4>
-        <p>All-Sky Automated Survey for Supernovae - Time-series photometry for millions of stars and variables.</p>
-        <a href="https://asas-sn.osu.edu/" target="_blank">
-          Visit Archive <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-database me-2"></i>Your Data Source</h4>
-        <p>Description of your data source goes here. Edit this section with your actual resources.</p>
-        <a href="https://example.com" target="_blank">
-          Visit Archive <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+      <ul class="resource-list">
+        <li>
+          <strong>GALEX Archive</strong> - Galaxy Evolution Explorer mission data archive containing UV imaging and spectroscopic data. 
+          <a href="https://galex.stsci.edu/" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>MAST Archive</strong> - Mikulski Archive for Space Telescopes with data from Hubble, JWST, GALEX, and other missions. 
+          <a href="https://mast.stsci.edu/" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>ASAS-SN Sky Patrol</strong> - All-Sky Automated Survey providing time-series photometry for millions of stars. 
+          <a href="https://asas-sn.osu.edu/" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Your Data Source</strong> - Description of your data source goes here. Edit with your actual resources.
+          <a href="https://example.com" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
     </section>
 
     <!-- Packages & Tools -->
     <section class="resources-section">
       <h2 class="section-title-resource">Packages & Tools</h2>
       
-      <div class="resource-card">
-        <h4><i class="fas fa-cube me-2"></i>Astropy</h4>
-        <p>Core Python library for astronomy - provides tools for FITS files, coordinates, units, and much more.</p>
-        <a href="https://www.astropy.org/" target="_blank">
-          Documentation <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-cube me-2"></i>Photutils</h4>
-        <p>Python package for detection and photometry of astronomical sources, built on Astropy.</p>
-        <a href="https://photutils.readthedocs.io/" target="_blank">
-          Documentation <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-cube me-2"></i>Matplotlib</h4>
-        <p>Comprehensive library for creating publication-quality visualizations in Python.</p>
-        <a href="https://matplotlib.org/" target="_blank">
-          Documentation <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-cube me-2"></i>Your Package</h4>
-        <p>Add your custom packages or frequently used tools here with descriptions.</p>
-        <a href="https://example.com" target="_blank">
-          Documentation <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+      <ul class="resource-list">
+        <li>
+          <strong>Astropy</strong> - Core Python library for astronomy with tools for FITS files, coordinates, and units. 
+          <a href="https://www.astropy.org/" target="_blank">Docs <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Photutils</strong> - Python package for detection and photometry of astronomical sources. 
+          <a href="https://photutils.readthedocs.io/" target="_blank">Docs <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Matplotlib</strong> - Comprehensive library for creating publication-quality visualizations. 
+          <a href="https://matplotlib.org/" target="_blank">Docs <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>NumPy</strong> - Fundamental package for numerical computing in Python. 
+          <a href="https://numpy.org/" target="_blank">Docs <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Your Package</strong> - Add your custom packages or tools here. 
+          <a href="https://example.com" target="_blank">Docs <i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
     </section>
 
     <!-- Tutorials & Guides -->
     <section class="resources-section">
       <h2 class="section-title-resource">Tutorials & Guides</h2>
       
-      <div class="resource-card">
-        <h4><i class="fas fa-book me-2"></i>Astropy Tutorials</h4>
-        <p>Official tutorials covering common astronomy tasks - from data reduction to advanced analysis techniques.</p>
-        <a href="https://learn.astropy.org/" target="_blank">
-          View Tutorials <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-book me-2"></i>Python for Astronomers</h4>
-        <p>Comprehensive guide to using Python for astronomical data analysis and visualization.</p>
-        <a href="https://prappleizer.github.io/" target="_blank">
-          View Guide <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-
-      <div class="resource-card">
-        <h4><i class="fas fa-book me-2"></i>Your Tutorial</h4>
-        <p>Add your own tutorials, notebooks, or guides here. Include links to your GitHub repos or documentation.</p>
-        <a href="https://example.com" target="_blank">
-          View Tutorial <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+      <ul class="resource-list">
+        <li>
+          <strong>Astropy Tutorials</strong> - Official tutorials covering common astronomy tasks and analysis techniques. 
+          <a href="https://learn.astropy.org/" target="_blank">View <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Python for Astronomers</strong> - Comprehensive guide to Python for astronomical data analysis. 
+          <a href="https://prappleizer.github.io/" target="_blank">View <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Your Tutorial</strong> - Add your own tutorials, notebooks, or guides here. 
+          <a href="https://example.com" target="_blank">View <i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
     </section>
 
-    <!-- Additional Section (Optional) -->
+    <!-- Other Resources -->
     <section class="resources-section">
       <h2 class="section-title-resource">Other Resources</h2>
       
-      <div class="resource-card">
-        <h4><i class="fas fa-link me-2"></i>Resource Title</h4>
-        <p>Add any other useful resources - conferences, workshops, research groups, or collaboration tools.</p>
-        <a href="https://example.com" target="_blank">
-          Learn More <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+      <ul class="resource-list">
+        <li>
+          <strong>arXiv Astrophysics</strong> - Preprint repository for astrophysics papers and research. 
+          <a href="https://arxiv.org/archive/astro-ph" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>ADS (NASA)</strong> - NASA Astrophysics Data System for searching astronomical literature. 
+          <a href="https://ui.adsabs.harvard.edu/" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+        <li>
+          <strong>Your Resource</strong> - Add conferences, workshops, or collaboration tools here. 
+          <a href="https://example.com" target="_blank">Visit <i class="fas fa-external-link-alt"></i></a>
+        </li>
+      </ul>
     </section>
 
   </main>
