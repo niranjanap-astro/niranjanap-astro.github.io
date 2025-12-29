@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources - Niranjana P</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .resources-header {
+      padding: 8rem 0 4rem;
+      background: #fafafa;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: center;
+    }
+
+    .resources-section {
+      padding: 4rem 0;
+    }
+
+    .section-title-resource {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: #1a1a1a;
+      position: relative;
+      padding-bottom: 0.75rem;
+    }
+
+    .section-title-resource::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #1a1a1a;
+    }
+
+    .resource-card {
+      background: #fafafa;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #1a1a1a;
+      transition: all 0.3s;
+    }
+
+    .resource-card:hover {
+      background: #ffffff;
+      transform: translateX(10px);
+      box-shadow: -5px 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .resource-card h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #1a1a1a;
+    }
+
+    .resource-card p {
+      color: #6b7280;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .resource-card a {
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.3s;
+    }
+
+    .resource-card a:hover {
+      gap: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="resources-header">
+    <div class="container">
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">Resources</h1>
+      <p style="font-size: 1.2rem; color: #6b7280;">Useful tools, data archives, and tutorials for astrophysics research</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Data Sites & Archives -->
+    <section class="resources-section">
+      <h2 class="section-title-resource">Data Sites & Archives</h2>
+      
+      <div class="resource-card">
+        <h4><i class="fas fa-database me-2"></i>GALEX Archive</h4>
+        <p>Galaxy Evolution Explorer mission data archive containing UV imaging and spectroscopic data for millions of sources.</p>
+        <a href="https://galex.stsci.edu/" target="_blank">
+          Visit Archive <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-database me-2"></i>MAST Archive</h4>
+        <p>Mikulski Archive for Space Telescopes - Access data from Hubble, JWST, GALEX, and other space missions.</p>
+        <a href="https://mast.stsci.edu/" target="_blank">
+          Visit Archive <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-database me-2"></i>ASAS-SN Sky Patrol</h4>
+        <p>All-Sky Automated Survey for Supernovae - Time-series photometry for millions of stars and variables.</p>
+        <a href="https://asas-sn.osu.edu/" target="_blank">
+          Visit Archive <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-database me-2"></i>Your Data Source</h4>
+        <p>Description of your data source goes here. Edit this section with your actual resources.</p>
+        <a href="https://example.com" target="_blank">
+          Visit Archive <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Packages & Tools -->
+    <section class="resources-section">
+      <h2 class="section-title-resource">Packages & Tools</h2>
+      
+      <div class="resource-card">
+        <h4><i class="fas fa-cube me-2"></i>Astropy</h4>
+        <p>Core Python library for astronomy - provides tools for FITS files, coordinates, units, and much more.</p>
+        <a href="https://www.astropy.org/" target="_blank">
+          Documentation <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-cube me-2"></i>Photutils</h4>
+        <p>Python package for detection and photometry of astronomical sources, built on Astropy.</p>
+        <a href="https://photutils.readthedocs.io/" target="_blank">
+          Documentation <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-cube me-2"></i>Matplotlib</h4>
+        <p>Comprehensive library for creating publication-quality visualizations in Python.</p>
+        <a href="https://matplotlib.org/" target="_blank">
+          Documentation <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-cube me-2"></i>Your Package</h4>
+        <p>Add your custom packages or frequently used tools here with descriptions.</p>
+        <a href="https://example.com" target="_blank">
+          Documentation <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Tutorials & Guides -->
+    <section class="resources-section">
+      <h2 class="section-title-resource">Tutorials & Guides</h2>
+      
+      <div class="resource-card">
+        <h4><i class="fas fa-book me-2"></i>Astropy Tutorials</h4>
+        <p>Official tutorials covering common astronomy tasks - from data reduction to advanced analysis techniques.</p>
+        <a href="https://learn.astropy.org/" target="_blank">
+          View Tutorials <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-book me-2"></i>Python for Astronomers</h4>
+        <p>Comprehensive guide to using Python for astronomical data analysis and visualization.</p>
+        <a href="https://prappleizer.github.io/" target="_blank">
+          View Guide <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="resource-card">
+        <h4><i class="fas fa-book me-2"></i>Your Tutorial</h4>
+        <p>Add your own tutorials, notebooks, or guides here. Include links to your GitHub repos or documentation.</p>
+        <a href="https://example.com" target="_blank">
+          View Tutorial <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Additional Section (Optional) -->
+    <section class="resources-section">
+      <h2 class="section-title-resource">Other Resources</h2>
+      
+      <div class="resource-card">
+        <h4><i class="fas fa-link me-2"></i>Resource Title</h4>
+        <p>Add any other useful resources - conferences, workshops, research groups, or collaboration tools.</p>
+        <a href="https://example.com" target="_blank">
+          Learn More <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #1a1a1a; color: #9ca3af; padding: 4rem 0 2rem; margin-top: 4rem;">
+    <div class="container text-center">
+      <p style="margin: 0; font-size: 0.9rem;">&copy; 2024 Niranjana P</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

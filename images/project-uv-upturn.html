@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UV Upturn Analysis - Niranjana P</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    /* Additional styles for project page */
+    .project-header {
+      padding: 8rem 0 4rem;
+      background: #fafafa;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .dev-notice {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      border-radius: 4px;
+    }
+
+    .dev-notice i {
+      color: #ffc107;
+      margin-right: 0.75rem;
+    }
+
+    .dev-notice p {
+      margin: 0;
+      color: #856404;
+      font-weight: 500;
+    }
+
+    .content-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .content-section:last-child {
+      border-bottom: none;
+    }
+
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+    }
+
+    .content-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #4b5563;
+    }
+
+    .github-link-card {
+      background: #fafafa;
+      padding: 1.5rem;
+      border-left: 4px solid #1a1a1a;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+
+    .github-link-card:hover {
+      background: #ffffff;
+      transform: translateX(10px);
+      box-shadow: -5px 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .github-link-card h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+    }
+
+    .github-link-card a {
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.3s;
+    }
+
+    .github-link-card a:hover {
+      gap: 1rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover {
+      color: #1a1a1a;
+      gap: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <header class="project-header">
+    <div class="container">
+      <a href="index.html#projects" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">UV Upturn Analysis</h1>
+      <p style="font-size: 1.2rem; color: #6b7280;">Investigating UV flux in early-type galaxies using GALEX data</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="padding: 4rem 0;">
+    
+    <!-- Development Notice -->
+    <div class="dev-notice">
+      <i class="fas fa-exclamation-triangle"></i>
+      <p><strong>Note:</strong> This project page is still under development. Content is being updated regularly.</p>
+    </div>
+
+    <!-- Summary Section -->
+    <section class="content-section">
+      <h2 class="section-heading">Summary</h2>
+      <div class="content-text">
+        <p>
+          This research investigates the UV upturn phenomenon observed in early-type galaxies. 
+          The UV upturn refers to an unexpected rise in ultraviolet flux in the spectra of these galaxies, 
+          which are typically dominated by old stellar populations.
+        </p>
+        <p>
+          Using data from the Galaxy Evolution Explorer (GALEX) satellite, we analyze the UV properties 
+          of early-type galaxies to understand the stellar populations responsible for this phenomenon. 
+          Our analysis combines photometric data with spectroscopic observations to characterize the 
+          nature and distribution of UV-bright sources.
+        </p>
+        <p>
+          The study focuses on galaxies in the Virgo cluster, providing insights into how stellar evolution 
+          and galactic environment influence the UV upturn characteristics.
+        </p>
+      </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="content-section">
+      <h2 class="section-heading">Motivation</h2>
+      <div class="content-text">
+        <p>
+          Understanding the UV upturn is crucial for several reasons:
+        </p>
+        <ul style="font-size: 1.05rem; line-height: 1.8; color: #4b5563;">
+          <li><strong>Stellar Population Studies:</strong> The UV upturn provides constraints on the presence 
+          and properties of hot evolved stars (such as extreme horizontal branch stars and hot white dwarfs) 
+          in old stellar populations.</li>
+          
+          <li><strong>Galaxy Evolution:</strong> The strength of the UV upturn varies among galaxies and 
+          correlates with various galactic properties, offering clues about galaxy formation and evolution.</li>
+          
+          <li><strong>Age and Metallicity Effects:</strong> Investigating how the UV upturn depends on 
+          stellar age and metallicity helps refine our models of stellar evolution in different environments.</li>
+          
+          <li><strong>Observational Constraints:</strong> Modern UV space telescopes like GALEX provide 
+          unprecedented data quality, allowing for detailed statistical studies of the UV upturn across 
+          large galaxy samples.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Code & Resources Section -->
+    <section class="content-section">
+      <h2 class="section-heading">Code & Resources</h2>
+      <p class="content-text mb-4">
+        The analysis code and data products from this project are available on GitHub. 
+        Each repository contains detailed documentation and example notebooks.
+      </p>
+
+      <div class="github-link-card">
+        <div>
+          <h4>Main Analysis Pipeline</h4>
+          <p style="margin: 0.5rem 0 0; color: #6b7280; font-size: 0.95rem;">
+            Python scripts for GALEX data processing and analysis
+          </p>
+        </div>
+        <a href="https://github.com/your-username/uv-upturn-analysis" target="_blank">
+          <i class="fab fa-github"></i> View Code <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="github-link-card">
+        <div>
+          <h4>Photometry Tools</h4>
+          <p style="margin: 0.5rem 0 0; color: #6b7280; font-size: 0.95rem;">
+            Custom photometry routines for UV data
+          </p>
+        </div>
+        <a href="https://github.com/your-username/uv-photometry" target="_blank">
+          <i class="fab fa-github"></i> View Code <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="github-link-card">
+        <div>
+          <h4>Visualization Notebooks</h4>
+          <p style="margin: 0.5rem 0 0; color: #6b7280; font-size: 0.95rem;">
+            Jupyter notebooks for creating publication-quality figures
+          </p>
+        </div>
+        <a href="https://github.com/your-username/uv-viz" target="_blank">
+          <i class="fab fa-github"></i> View Code <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" style="background: #1a1a1a; color: #9ca3af; padding: 3rem 0;">
+    <div class="container text-center">
+      <p style="margin: 0; font-size: 0.9rem;">&copy; 2024 Niranjana P</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
