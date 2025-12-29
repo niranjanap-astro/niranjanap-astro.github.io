@@ -11,6 +11,24 @@
   <link rel="stylesheet" href="styles.css">
   
   <style>
+    /* Logo styling */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 35px;
+      width: auto;
+      max-width: 150px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05);
+    }
+    
     .resources-header {
       padding: 8rem 0 4rem;
       background: #fafafa;
