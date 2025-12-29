@@ -195,6 +195,23 @@ header::before {
 .navbar-nav .nav-link:hover {
   color: var(--clr-accent) !important;
 }
+/* Navigation Fix for all pages */
+.navbar {
+  background: #ffffff !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+/* END OF NAVBAR FIX */
 
 @media (max-width: 768px) {
   .display-4 { font-size: 2.2rem; }
