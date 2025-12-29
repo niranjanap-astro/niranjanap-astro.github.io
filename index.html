@@ -33,11 +33,18 @@
     }
 
     .navbar-brand {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      color: #1a1a1a !important;
-      font-size: 1.4rem;
-      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+      transition: transform 0.3s;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05);
     }
 
     .nav-link {
@@ -568,7 +575,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">NP</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -577,6 +586,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -590,9 +600,9 @@
         <div class="col-lg-6 hero-content">
           <img src="images/niranjana.jpeg" alt="Niranjana P" class="profile-image mb-4">
           <h1>Niranjana P</h1>
-          <p class="hero-subtitle">Pursuing PhD in Extragalctic Astrophysics</p>
-          <p class="hero-tags">Extragalactic Globular CLusters · Galaxy Evolution · Pre-Main Sequence Stars</p>
-          <p class="hero-tags mb-4"> Galactic & Extragalactic Research</p>
+          <p class="hero-subtitle">MSc Physics (Astrophysics)</p>
+          <p class="hero-tags">UV Upturn · Galaxy Evolution · Pre-Main Sequence Stars</p>
+          <p class="hero-tags mb-4">Observational Galactic & Extragalactic Research</p>
           <a href="#contact" class="btn-simple btn-primary-simple me-3 mb-2">Get in Touch</a>
           <a href="pdfs/NiranjanaP_CV.pdf" class="btn-simple btn-outline-simple mb-2" target="_blank">Download CV</a>
         </div>
@@ -601,8 +611,8 @@
           <div class="intro-box">
             <div class="wave-emoji">👋</div>
             <p class="intro-text">
-              I explore <strong>cosmic mysteries</strong> through observational astrophysics, decoding the <strong>old relics such as Globular Clusters</strong>  galaxies 
-              and analyzing their<strong>stellar population properties and abundences</strong>.
+              I explore <strong>cosmic mysteries</strong> through observational astrophysics, decoding the <strong>UV upturn</strong> in early-type galaxies 
+              and analyzing <strong>stellar formation</strong> in T Tauri stars—bridging computational theory with observational reality.
             </p>
           </div>
         </div>
@@ -619,8 +629,8 @@
           <section id="about">
             <h2 class="section-title">About Me</h2>
             <div class="about-card">
-              I'm a PhD student at UFRGS (Brazil) specializing in observational astrophysics. 
-              My research focuses on extragalactic globular clusters of galaxies in local volume. I also work with premain sequenmce stars. 
+              I'm a final-year MSc Physics student specializing in observational astrophysics. 
+              My research focuses on classical T Tauri stars and the UV upturn in early-type galaxies.
             </div>
 
             <h3 class="section-title">Skills</h3>
@@ -662,7 +672,7 @@
               <div class="card-number">01</div>
               <h3 class="card-title">UV Upturn Analysis</h3>
               <p class="card-text">Investigating UV flux in early-type galaxies using GALEX data.</p>
-              <a href="https://github.com/your-username/uv-upturn" class="card-link" target="_blank">
+              <a href="project-uv-upturn.html" class="card-link">
                 View Project <i class="fas fa-arrow-right"></i>
               </a>
             </div>
